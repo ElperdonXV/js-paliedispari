@@ -4,3 +4,5 @@
 let parola = prompt('Inserisci una parola');
 let parolaSuddivisa = parola.split('');
 console.log(parolaSuddivisa);
+let inverso = parolaSuddivisa.reverse();
+console.log(inverso);
