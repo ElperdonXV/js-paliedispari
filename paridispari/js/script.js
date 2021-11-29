@@ -5,3 +5,12 @@
 //Dichiariamo chi ha vinto
 //(corrispondenza tra scelta pari e dispari e somma pari o dispari)
 //In un secondo momento creiamo delle funzioni per i numeri random e per il check pari dispari
+
+let scelta = '';
+let esito = false;
+do {
+    scelta = prompt('pari o dispari?');
+    if (scelta == 'pari' || scelta == 'dispari'){
+        esito = true;
+    }
+}while(esito = true);
