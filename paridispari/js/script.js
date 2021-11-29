@@ -6,6 +6,25 @@
 //(corrispondenza tra scelta pari e dispari e somma pari o dispari)
 //In un secondo momento creiamo delle funzioni per i numeri random e per il check pari dispari
 
+
+//creo funzione per i numeri random
+function randomRangeNumber(number) {
+    number = parseInt(Math.floor(Math.random() * (max - min) + min));
+    return number;
+}
+
+//creo funzione per il check pari e dispari 
+function evenOdd(num) {
+    let risultato = '';
+    if (num % 2 != 0) {
+        risultato = 'dispari';
+    }
+    else {
+         risultato = 'pari';
+    }
+    return risultato;
+}
+
 let scelta = '';
 const pari = 'pari';
 const dispari = 'dispari';
@@ -29,33 +48,20 @@ while (esitoTwo != true){
     else alert('Devi inserire un numero compreso tra 1 e 5!');
 }
 
-let numAi = parseInt(Math.floor(Math.random() * (max - min) + min));
+//let numAi = parseInt(Math.floor(Math.random() * (max - min) + min));
+let numAi = randomRangeNumber(min, max);
 let somma = numUser + numAi;
 console.log(somma);
-let risultato = '';
-if(somma % 2 != 0){
-    risultato = 'dispari';
-}
-else risultato = 'pari';
+//let risultato = '';
+//if(somma % 2 != 0){
+//    risultato = 'dispari';
+//}
+//else risultato = 'pari';
+
+let risultato = evenOdd(somma);
 
 if (scelta == risultato){
     document.writeln('Hai vinto, che fortuna!');
 }
 else document.writeln('Hai perso, sfigato');
 
-//creo funzione per i numeri random
-function randomRangeNumber(number) {
-    let numAi = parseInt(Math.floor(Math.random() * (max - min) + min));
-    return numAi;
-}
-
-//creo funzione per il check pari e dispari 
-function evenOdd (number){
-    if (somma % 2 != 0) {
-        risultato = 'dispari';
-    }
-    else {
-        risultato = 'pari';
-    } 
-    return risultato;
-}
