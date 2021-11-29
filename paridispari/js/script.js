@@ -15,4 +15,6 @@ while (esito != true){
     if (scelta == pari || scelta == dispari){
         esito = true;
     }
+    else alert('Devi inserire o pari o dispari!');
 }
+
