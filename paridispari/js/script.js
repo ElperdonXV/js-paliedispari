@@ -31,3 +31,14 @@ while (esitoTwo != true){
 
 let numAi = Math.floor(Math.random() * (max - min) + min);
 console.log(numAi);
+let somma = numUser + numAi;
+let risultato = '';
+if(somma % 2 != 0){
+    risultato = 'dispari';
+}
+else risultato = 'pari';
+
+if (scelta == risultato){
+    alert('Hai vinto, che fortuna!');
+}
+else alert('Hai perso, sfigato');
