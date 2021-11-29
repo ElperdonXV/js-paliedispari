@@ -18,3 +18,15 @@ while (esito != true){
     else alert('Devi inserire o pari o dispari!');
 }
 
+let scelta = parseInt(0);
+const min = 1;
+const max = 5;
+let esitoTwo = false;
+while (esitoTwo != true){
+    numUser = prompt('Adesso scegli un numero tra 1 e 5');
+    if(numUser>=min && numUser<=max){
+        esitoTwo = true;
+    }
+    else alert('Devi inserire un numero compreso tra 1 e 5!');
+}
+
