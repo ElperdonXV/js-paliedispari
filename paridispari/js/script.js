@@ -23,7 +23,7 @@ const min = 1;
 const max = 5;
 let esitoTwo = false;
 while (esitoTwo != true){
-    numUser = prompt('Adesso scegli un numero tra 1 e 5');
+    let numUser = prompt('Adesso scegli un numero tra 1 e 5');
     if(numUser>=min && numUser<=max){
         esitoTwo = true;
     }
