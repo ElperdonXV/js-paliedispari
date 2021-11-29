@@ -9,9 +9,9 @@
 let scelta = '';
 const pari = 'pari';
 const dispari = 'dispari';
+scelta = prompt('pari o dispari?');
 let esito = false;
 while (esito != true){
-    scelta = prompt('pari o dispari?');
     if (scelta == pari || scelta == dispari){
         esito = true;
     }
@@ -21,17 +21,17 @@ while (esito != true){
 const min = 1;
 const max = 5;
 let esitoTwo = false;
+let numUser = parseInt(prompt('Adesso scegli un numero tra 1 e 5'));
 while (esitoTwo != true){
-    let numUser = prompt('Adesso scegli un numero tra 1 e 5');
     if(numUser>=min && numUser<=max){
         esitoTwo = true;
     }
     else alert('Devi inserire un numero compreso tra 1 e 5!');
 }
 
-let numAi = Math.floor(Math.random() * (max - min) + min);
-console.log(numAi);
+let numAi = parseInt(Math.floor(Math.random() * (max - min) + min));
 let somma = numUser + numAi;
+console.log(somma);
 let risultato = '';
 if(somma % 2 != 0){
     risultato = 'dispari';
@@ -39,6 +39,6 @@ if(somma % 2 != 0){
 else risultato = 'pari';
 
 if (scelta == risultato){
-    alert('Hai vinto, che fortuna!');
+    document.writeln('Hai vinto, che fortuna!');
 }
-else alert('Hai perso, sfigato');
+else document.writeln('Hai perso, sfigato');
