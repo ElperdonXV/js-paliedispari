@@ -42,3 +42,20 @@ if (scelta == risultato){
     document.writeln('Hai vinto, che fortuna!');
 }
 else document.writeln('Hai perso, sfigato');
+
+//creo funzione per i numeri random
+function randomRangeNumber(number) {
+    let numAi = parseInt(Math.floor(Math.random() * (max - min) + min));
+    return numAi;
+}
+
+//creo funzione per il check pari e dispari 
+function evenOdd (number){
+    if (somma % 2 != 0) {
+        risultato = 'dispari';
+    }
+    else {
+        risultato = 'pari';
+    } 
+    return risultato;
+}
