@@ -18,7 +18,6 @@ while (esito != true){
     else alert('Devi inserire o pari o dispari!');
 }
 
-let scelta = parseInt(0);
 const min = 1;
 const max = 5;
 let esitoTwo = false;
