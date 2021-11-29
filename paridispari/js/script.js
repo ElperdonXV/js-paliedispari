@@ -29,3 +29,5 @@ while (esitoTwo != true){
     else alert('Devi inserire un numero compreso tra 1 e 5!');
 }
 
+let numAi = Math.floor(Math.random() * (max - min) + min);
+console.log(numAi);
