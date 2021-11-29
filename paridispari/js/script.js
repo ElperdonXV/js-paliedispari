@@ -7,10 +7,12 @@
 //In un secondo momento creiamo delle funzioni per i numeri random e per il check pari dispari
 
 let scelta = '';
+const pari = 'pari';
+const dispari = 'dispari';
 let esito = false;
-do {
+while (esito != true){
     scelta = prompt('pari o dispari?');
-    if (scelta == 'pari' || scelta == 'dispari'){
+    if (scelta == pari || scelta == dispari){
         esito = true;
     }
-}while(esito = true);
+}
