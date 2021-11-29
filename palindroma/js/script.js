@@ -3,7 +3,6 @@
 //(prima senza funzione e poi con funzione)
 
 function palindroma(parola){
-    let parola = prompt('Inserisci una parola');
     let parolaSuddivisa = parola.split('');
     parolaSuddivisa = parolaSuddivisa.reverse();
     let inverso = parolaSuddivisa.join('');
@@ -14,3 +13,8 @@ function palindroma(parola){
     return result;
 }
 
+const parola = palindroma(prompt('Inserisci una parola'));
+if (parola==false) {
+    alert("non è una parola palindroma");
+}
+else alert("è una parola palindroma");
