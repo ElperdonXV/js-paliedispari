@@ -3,6 +3,10 @@
 //(prima senza funzione e poi con funzione)
 let parola = prompt('Inserisci una parola');
 let parolaSuddivisa = parola.split('');
-console.log(parolaSuddivisa);
-let inverso = parolaSuddivisa.reverse();
+parolaSuddivisa = parolaSuddivisa.reverse();
+let inverso = parolaSuddivisa.join('');
 console.log(inverso);
+if (parola == inverso){
+    console.log( parola + " è una parola palindroma");
+}
+else console.log(parola + " non è una parola palindroma");
